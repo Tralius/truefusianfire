@@ -1,0 +1,9 @@
+
+.fire-wrapper {
+    background-color: white;
+}
+
+.fire {
+   max-width: 300px;
+   z-index: 1;
+}
