@@ -1,9 +1,12 @@
-
 .fire-wrapper {
     background-color: white;
 }
 
 .fire {
-   max-width: 300px;
+   background-image: url("./fire_full.png"); 
+   background-position: center;
+   background-size: cover;
+   min-width: 300px;
+   min-height: 300px;
    z-index: 1;
 }

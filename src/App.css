@@ -28,6 +28,7 @@
   justify-content: space-around;
   justify-items: center;
   align-items: center;
+  max-width: 300px;
 }
 
 .text-wrapper {
