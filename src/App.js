@@ -1,22 +1,23 @@
 import './App.css';
-import Fire from './components/Fire';
-import Quote from './components/Quote';
-import FireButton from './components/FireButton';
+import { useState } from 'react';
+import FlameContext from './FlameContext';
+import Appbody from './components/Appbody';
+
 
 function App() {
- return (
 
- <div>
-    <div  className="wrapper">
-        <div className="fire-wrapper">
-        <Fire/>
-        <FireButton/>
-    </div>
-    <div>
-        <Quote />
-    </div>
-    </div>
- </div>
+    const [state, setstate] = useState({
+        active: true,
+        setActive: () => setstate(({active}) => ({
+            active: !active
+        }))
+    })
+
+
+ return (
+     <FlameContext.Provider value={state}>
+        <Appbody/>
+     </FlameContext.Provider>
  );
 }
 
